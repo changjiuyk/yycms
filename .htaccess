@@ -1,0 +1,50 @@
+RewriteEngine on
+RewriteRule ^index.html$ index.php
+RewriteRule ^movie.html$ movie.php
+RewriteRule ^tv.html$ tv.php
+RewriteRule ^dongman.html$ dongman.php
+RewriteRule ^zongyi.html$ zongyi.php
+RewriteRule ^movie_(.*)-(.*)-(.*)-(.*)-(.*).html$ movie.php?cat=$1&area=$2&year=$3&rank=$4&pageno=$5
+RewriteRule ^tv_(.*)-(.*)-(.*)-(.*)-(.*).html$ tv.php?cat=$1&area=$2&year=$3&rank=$4&pageno=$5
+RewriteRule ^dm_(.*)-(.*)-(.*)-(.*)-(.*).html$ dongman.php?cat=$1&area=$2&year=$3&rank=$4&pageno=$5
+RewriteRule ^zy_(.*)-(.*)-(.*)-(.*).html$ zongyi.php?cat=$1&area=$2&rank=$3&pageno=$4
+RewriteRule ^zy_(.*)-(.*)-(.*).html$ zongyi.php?year=$1&rank=$2&pageno=$3
+RewriteRule ^music.html$ music.php
+RewriteRule ^app.html$ app.php
+RewriteRule ^baidu.xml$ baidu.php
+RewriteRule ^user/index.html user/index.php
+RewriteRule ^user/login.html user/login.php
+RewriteRule ^user/reg.html user/reg.php
+RewriteRule ^user/plays.html user/plays.php
+RewriteRule ^user/buy.html user/buy.php
+RewriteRule ^user/upgrade.html user/upgrade.php
+RewriteRule ^user/orders.html user/orders.php
+RewriteRule ^user/plog.html user/plog.php
+RewriteRule ^user/reward.html user/reward.php
+RewriteRule ^user/favs.html user/favs.php
+RewriteRule ^yg.html$ yg.php
+RewriteRule ^yg-([0-9]+).html$ yg.php?id=$1
+RewriteRule ^mj.html$ mj.php
+RewriteRule ^mj-([0-9]+)-([0-9]+).html$ mj.php?cid=$1&page=$2
+RewriteRule ^zb.html$ zb.php
+RewriteRule ^zx.html$ zx.php
+RewriteRule ^zx-([0-9]+).html$ zx.php?page=$1
+RewriteRule ^zx-(.*)-([0-9]+).html$ zx.php?zn=$1&page=$2
+RewriteRule ^zxnews-(.*)-([0-9]+).html$ zxnews.php?id=$1&dz=$2
+RewriteRule ^qxk.html$ qxk.php
+RewriteRule ^qxk-([0-9]+)-([0-9]+).html$ qxk.php?cid=$1&page=$2
+RewriteRule ^qxplay/(.*).html$ qxplay.php?play=$1
+RewriteRule ^vod/(.*)/(.*).html$ play.php?lx=$1&dz=$2
+RewriteRule ^search-(.*).html$ search.php?wd=$1
+RewriteRule ^searchqw-(.*).html$ searchqw.php?wd=$1
+RewriteRule ^qwplay-(.*)-(.*).html$ qwplay.php?zd=$1&id=$2
+RewriteRule ^news_index.html$ news_index.php
+RewriteRule ^newss-([0-9]+)-([0-9]+).html$ news.php?dz=/$1/$2.shtml
+RewriteRule ^gbook.html$ gbook.php
+RewriteRule ^gbook-([0-9]+).html$ gbook.php?page=$1
+
+
+RewriteRule ^mx.html$ mx.php
+RewriteRule ^mxk-([0-9]+).html$ mxk.php?id=$1
+RewriteRule ^mx-(.*)-(.*)-(.*)-(.*)-(.*)-(.*)-(.*)/(.*).html$ mx.php?dq=$1&xb=$2&zy=$3&xx=$4&xz=$5&zm=$6&sr=$7&pageno=$8
+
